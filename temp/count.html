@@ -1,0 +1,12 @@
+<h1>统计结果的总字数为:{{ count }}字</h1>
+<br>
+
+<h2>你的文本内容为：</h2>
+{{ text }}
+<br>
+<h3>各个字符出现的频率，从上往下排</h3>
+<br>
+{% for word,time in times %}
+{{ word }} - {{ time }}
+<br>
+{% endfor %}
